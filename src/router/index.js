@@ -11,6 +11,7 @@ import transitionMultiple from '@/components/transition/multiple/transitionMulti
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',//去掉url里面的#
   routes: [
     {
       path: '/',
