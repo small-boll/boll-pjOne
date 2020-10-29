@@ -8,6 +8,8 @@ import SlotHasName from '@/components/slot/hasName/SlotMainHasName'//具名插�
 import transitionSingle from '@/components/transition/single/transitionSingle'//单元素过渡
 import transitionMultiple from '@/components/transition/multiple/transitionMultiple'//多组件过渡
 
+import closeWindowSingel from '@/components/closeWindow/closeWindowSingel'//点击弹窗其他位置关比弹窗
+
 Vue.use(Router)
 
 export default new Router({
@@ -37,6 +39,11 @@ export default new Router({
       path: '/transitionMultiple',
       name: 'transitionMultiple',
       component: transitionMultiple
+    },
+    {
+      path:'/closeWindowSingel',
+      name:'closeWindowSingel',
+      component:closeWindowSingel
     },
   ]
 })

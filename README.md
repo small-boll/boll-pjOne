@@ -15,3 +15,7 @@
 2. *transition文件夹 过渡动画*
     1. singel 文件夹 单个元素过渡
     2. multiple 文件夹 多组件过渡
+
+3. *closeWindow文件夹  实现点击弹窗的其他位置关闭弹窗功能*  
+   (最后看element-ui发现 饿了么提供的弹窗是支持此操作的。。。)
+   如用vue2.0实现 关键句--> !clickLocal.contains(event.target)  判断点击处不在弹窗内
