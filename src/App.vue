@@ -1,3 +1,9 @@
+<!--
+ * @Author: liangmin 649554709@qq.com
+ * @Date: 2022-05-19 14:44:29
+ * @FilePath: \boll-pjOne\src\App.vue
+ * @Description: [文件描述]
+-->
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
@@ -18,6 +24,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
 }
 </style>
