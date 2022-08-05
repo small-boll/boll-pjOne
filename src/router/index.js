@@ -12,6 +12,7 @@ import Login from '@/pages/login/Index'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
