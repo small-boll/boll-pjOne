@@ -28,7 +28,7 @@ export default {
   name:'login',
   data () {
     return {
-      rules: [],
+      rules: {},
       ruleForm: {
         name: '',
         password: ''
@@ -52,8 +52,8 @@ export default {
         this.$message.error('密码不能为空！')
         return false
       }
-      this.$router.push({ path: this.redirect || '/', replace: true })
-      console.log('ruleForm: ', ruleForm);
+      
+      this.$router.push({ path: '/layout', replace: true })
     }
   }
 

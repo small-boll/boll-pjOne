@@ -6,8 +6,9 @@
  */
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Login from '@/pages/login/Index'
+import layout from '@/layout/layout'
+import baseRouter from "./baseRouter"
 
 Vue.use(Router)
 
@@ -16,8 +17,16 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Login',
+      name: 'login',
       component: Login
+    },
+    {
+      path: '/layout',
+      name: 'layout',
+      component: layout,
+      children: [
+        ...baseRouter
+      ]
     }
   ]
 })
