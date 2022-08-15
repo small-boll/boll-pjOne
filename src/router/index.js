@@ -12,7 +12,7 @@ import baseRouter from "./baseRouter"
 
 Vue.use(Router)
 
-export default new Router({
+const router =  new Router({
   mode: 'history',
   routes: [
     {
@@ -30,3 +30,23 @@ export default new Router({
     }
   ]
 })
+
+// 路由守卫
+router.beforeEach((to, from, next) => {
+  console.log('to, from, next: ', to, from, next)
+  if (Vue.prototype.breakHotLayer) {
+    Vue.prototype.breakHotLayer.remove()
+    Vue.prototype.breakHotLayer = null
+  }
+  // console.log(from)
+  // store.commit('user/set_page_flag', from.path === '/')
+  next()
+})
+// 解决重复点击警告问题
+const VueRouterPush = Router.prototype.push
+Router.prototype.push = function push (to) {
+  return VueRouterPush.call(this, to).catch(err => err)
+}
+
+
+export default router
