@@ -18,9 +18,9 @@ export default [
         icon: 'personCenter',
       },
       {
-        name: 'example',
-        lable: '案例',
-        path: '/layout/example',
+        name: 'Three3D',
+        lable: '3D',
+        path: '/layout/Three3D',
         icon: 'example',
       },
     ]

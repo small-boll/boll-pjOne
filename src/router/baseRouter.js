@@ -9,5 +9,9 @@ const baseRouter = [
     path: 'personCenter',
     component: () => import(/* webpackChunkName: "dt" */ '@/components/personCenter/PersonCenter.vue')    
   },
+  {
+    path: 'Three3D',
+    component: () => import(/* webpackChunkName: "dt" */ '@/components/three/Three3D.vue')    
+  },
 ]
 export default baseRouter
