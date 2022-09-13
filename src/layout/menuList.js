@@ -27,9 +27,16 @@ export default [
   },
   {
     name: 'folder2',
-    lable: '文件夹二',
+    lable: 'css边框',
     path: '',
     icon: '',
-    children: null
+    children: [
+      {
+        name: 'CssBorder',
+        lable: '边框',
+        path: '/layout/CssBorder',
+        icon: 'CssBorder',
+      },
+    ]
   }
 ]

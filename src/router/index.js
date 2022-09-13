@@ -9,6 +9,7 @@ import Router from 'vue-router'
 import Login from '@/pages/login/Index'
 import layout from '@/layout/layout'
 import baseRouter from "./baseRouter"
+import cssRouter from "./cssRouter"
 
 Vue.use(Router)
 
@@ -25,7 +26,8 @@ const router =  new Router({
       name: 'layout',
       component: layout,
       children: [
-        ...baseRouter
+        ...baseRouter,
+        ...cssRouter
       ]
     }
   ]
